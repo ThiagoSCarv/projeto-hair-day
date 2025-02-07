@@ -1,4 +1,7 @@
 {
+  "name": "hair-day",
+  "description": "Aplicação para agendamento de horários em salão de beleza",
+  "author": "Thiago Soares de Carvalho",
   "scripts": {
     "server": "json-server --watch server.json --port 3333"
   },
