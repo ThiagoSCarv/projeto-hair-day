@@ -1,3 +1,9 @@
 {
-  "schedules": []
+  "schedules": [
+    {
+      "id": 1739128655320,
+      "name": "Thiago Soares",
+      "when": "2025-02-09T20:00:00.000Z"
+    }
+  ]
 }
