@@ -3,7 +3,7 @@ import { hoursLoad } from "../form/hours-load.js";
 import {scheduleShow} from "../schedules/show.js";
 
 //Seleciona o input date
-const selectedDate = document.getElementById('date');
+const selectedDate = document.querySelector('#date');
 
 export async function schedulesDay() {
   //Obtem a data do input
@@ -11,12 +11,11 @@ export async function schedulesDay() {
 
   //Busca na API os agendamentos.
   const dailySchedules = await scheduleFetchByDay({ date });
-  console.log(dailySchedules);
 
   //Exibe os agendamentos do dia
   scheduleShow({ dailySchedules });
 
   // Renderiza as horas disponiveis
 
-  hoursLoad({ date });
+  hoursLoad({ date, dailySchedules });
 }
